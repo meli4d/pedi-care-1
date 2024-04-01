@@ -7,7 +7,12 @@ import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import logo1 from '../assets/images/logo1.png'
+import logo2 from '../assets/images/logo2.png'
+import logo3 from '../assets/images/logo3.png'
+import logo4 from '../assets/images/logo4.png'
 
 
 function MainPage() {
@@ -34,15 +39,20 @@ function MainPage() {
             </Form>
 
             <Grid container columnSpacing={15} style={{ marginTop: 50 }}>
-                <Grid item xs={3} style={{width:245}}>
+                <Grid item xs={3} style={{ width: 245 }}>
                     <Card variant="outlined" >
+                        <CardMedia
+                            sx={{ height: 200 }}
+                            image={logo4}
+                            title="green iguana"
+                        />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
                                 Blogs
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit 
+                                les bactéries pathogènes sont partout. Utiliser un produit
                                 désinfectant est une manière pratique et...
                             </Typography>
                         </CardContent>
@@ -51,15 +61,20 @@ function MainPage() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3} style={{width:245}}>
+                <Grid item xs={3} style={{ width: 245 }}>
                     <Card variant="outlined" >
                         <CardContent>
+                            <CardMedia
+                                sx={{ height: 200 }}
+                                image={logo2}
+                                title="green iguana"
+                            />
                             <Typography gutterBottom variant="h5" component="div">
                                 Boutique en ligne
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit 
+                                les bactéries pathogènes sont partout. Utiliser un produit
                                 désinfectant est une manière pratique et...
                             </Typography>
                         </CardContent>
@@ -68,15 +83,20 @@ function MainPage() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3} style={{width:245}}>
+                <Grid item xs={3} style={{ width: 245 }}>
                     <Card variant="outlined" >
                         <CardContent>
+                            <CardMedia
+                                sx={{ height: 200 }}
+                                image={logo3}
+                                title="green iguana"
+                            />
                             <Typography gutterBottom variant="h5" component="div">
-                            Rendez vous
+                                Rendez vous
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit 
+                                les bactéries pathogènes sont partout. Utiliser un produit
                                 désinfectant est une manière pratique et...
                             </Typography>
                         </CardContent>
@@ -85,15 +105,20 @@ function MainPage() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3} style={{width:245}}>
+                <Grid item xs={3} style={{ width: 245 }}>
                     <Card variant="outlined" >
                         <CardContent>
+                            <CardMedia
+                                sx={{ height: 200 }}
+                                image={logo1}
+                                title="green iguana"
+                            />
                             <Typography gutterBottom variant="h5" component="div">
-                            Nutritions
+                                Nutritions
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit 
+                                les bactéries pathogènes sont partout. Utiliser un produit
                                 désinfectant est une manière pratique et...
                             </Typography>
                         </CardContent>
