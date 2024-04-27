@@ -35,9 +35,15 @@ function LoginPage() {
     try {
       let response = await axios.post('http://localhost:3001/api/auth/login', {  email, password});
       if (response.status === 200) {
-        console.log(response.data)
+        console.log(response.data);
+        localStorage.setItem('user', JSON.stringify(response.data));
         localStorage.setItem("token", response.data.token);
-        navigation('/home');
+        if(response.data.type === 'patient'){
+          navigation('/home');
+        }else{
+          navigation('/pro');
+        }
+        
       }
     } catch (error) {
       localStorage.removeItem("token");
@@ -63,7 +69,8 @@ function LoginPage() {
         <Button variant="primary" type="submit" style={{marginTop:30}}>
           Se connecter
         </Button>
-        <div style={{marginTop:30}}>Nouveau sur Pedi Care ? <Link to="/inscrire">S'inscrire</Link></div>
+        <div style={{marginTop:30}}>Nouveau sur Pedi Care ? <Link to='/inscrire' state={{ type: "patient" }}>S'inscrire</Link></div>
+        <Link to='/inscrire' state={{ type: "medecin" }}>Vous etes un medecin</Link>
       </Form>
       <Dialog
         open={open}

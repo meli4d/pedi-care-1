@@ -9,6 +9,9 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+import { Link } from "react-router-dom";
 import logo1 from '../assets/images/logo1.png'
 import logo2 from '../assets/images/logo2.png'
 import logo3 from '../assets/images/logo3.png'
@@ -16,8 +19,13 @@ import logo4 from '../assets/images/logo4.png'
 
 
 function MainPage() {
+
+
+    const VILLES = process.env.REACT_APP_VILLES.split(",");
+    const SPECIALITES = process.env.REACT_APP_SPECIALITES.split(",");
+
     return (
-        <div style={{ marginTop: 150, marginLeft: 50, marginRight: 50 }}>
+        <div style={{ marginTop: 100, marginLeft: 50, marginRight: 50 }}>
             <h3 style={{ color: "#80b3ff" }}>Trouvez un rendez-vous</h3>
             <Form style={{
                 display: 'flex',
@@ -25,13 +33,23 @@ function MainPage() {
             }} >
 
                 <Form.Group >
-                    <Form.Control type="text"
-                        placeholder="Nom, spécialité" />
+                    <Autocomplete
+                        disablePortal
+                        id="combo-box-demo"
+                        options={SPECIALITES}
+                        sx={{ width: 300 }}
+                        renderInput={(params) => <TextField {...params} label="Spécialité" />}
+                    />
                 </Form.Group>
 
                 <Form.Group style={{ marginLeft: 2 }}>
-                    <Form.Control type="text"
-                        placeholder="Ville" />
+                    <Autocomplete
+                        disablePortal
+                        id="combo-box-demo"
+                        options={VILLES}
+                        sx={{ width: 300 }}
+                        renderInput={(params) => <TextField {...params} label="Ville" />}
+                    />
                 </Form.Group>
                 <Button variant="primary" type="submit" style={{ marginLeft: 10 }}>
                     Rechercher
@@ -101,7 +119,9 @@ function MainPage() {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Prendre un rendez vous</Button>
+                            <Link to="/rdvs">
+                                <Button size="small">Prendre un rendez vous</Button>
+                            </Link>
                         </CardActions>
                     </Card>
                 </Grid>
