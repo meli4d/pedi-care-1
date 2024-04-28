@@ -25,7 +25,7 @@ const NavBar = () => {
           >
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Pedi Care
+            Pedia Care
           </Typography>
           <Link to="/login">
             <Button style={{color : "#FFFFFF"}}>Se connecter</Button>
