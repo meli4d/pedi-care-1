@@ -26,7 +26,8 @@ function MainPage() {
 
     return (
         <div style={{ marginTop: 100, marginLeft: 50, marginRight: 50 }}>
-            <h3 style={{ color: "#80b3ff" }}>Trouvez un rendez-vous</h3>
+            <h3 style={{ color: "#80b3ff" }}>Pédia care : Soutenir les parents ,
+            chérir les enfants, votre guide confiant vers une enfance en santé ! </h3>
             <Form style={{
                 display: 'flex',
                 width: 700
@@ -64,20 +65,19 @@ function MainPage() {
                             image={logo4}
                             title="green iguana"
                         />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Blogs
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit
-                                désinfectant est une manière pratique et...
+                     <Typography variant="body2" color="text.secondary">
+                            Une question vous tracasse concernant votre enfant ? 
+                            Posez vos questions dans notre forum dédié 
+                            et bénéficiez de réponses expertes pour assurer le bien-être de votre enfant.
+                            Nos experts sont à votre écoute, 24h/24, 7j/7.
+                            Plongez dans notre forum interactif et bénéficiez de conseils personnalisés !
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Lire plus</Button>
+                            <Button size="small">Je pose une question</Button>
                         </CardActions>
                     </Card>
+                                
                 </Grid>
                 <Grid item xs={3} style={{ width: 245 }}>
                     <Card variant="outlined" >
@@ -91,9 +91,11 @@ function MainPage() {
                                 Boutique en ligne
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit
-                                désinfectant est une manière pratique et...
+                            Besoin urgent d'articles essentiels pour vous et votre enfant
+                            sans quitter votre domicile ? 
+                            Notre sélection complète répond à tous vos besoins primordiaux, 
+                            livrée rapidement à votre porte 24h/24, 7j/7.
+                            Simplifiez votre vie de parent grâce à nos services !
                             </Typography>
                         </CardContent>
                         <CardActions>
@@ -101,6 +103,7 @@ function MainPage() {
                         </CardActions>
                     </Card>
                 </Grid>
+                                
                 <Grid item xs={3} style={{ width: 245 }}>
                     <Card variant="outlined" >
                         <CardContent>
@@ -113,9 +116,10 @@ function MainPage() {
                                 Rendez vous
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit
-                                désinfectant est une manière pratique et...
+                            Obtenez rapidement les conseils et prescriptions nécessaires pour votre enfant, 
+                            sans avoir à vous déplacer en cas d'urgence.
+                            Prenez rendez-vous en ligne avec nos specialiste en un seul clic 24h/24, 7j/7 sans délai et accédez à notre lien visioconférence !
+                            
                             </Typography>
                         </CardContent>
                         <CardActions>
@@ -137,16 +141,17 @@ function MainPage() {
                                 Nutritions
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Que vous soyez à la maison, dans les transports ou au bureau,
-                                les bactéries pathogènes sont partout. Utiliser un produit
-                                désinfectant est une manière pratique et...
+                            Nourrissez sainement vos petits avec nos conseils et recettes savoureuses,
+                            pour des habitudes alimentaires qui favorisent leur bien-être et leur développement.
+                            Découvrez notre menu nutritionnel conçu pour tous les âges de vos enfants ! 
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small">Lire plus</Button>
+                            <Button size="small">Découvrir notre menu nutritionnel</Button>
                         </CardActions>
                     </Card>
                 </Grid>
+                           
             </Grid>
 
         </div>
